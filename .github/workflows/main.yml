@@ -22,6 +22,6 @@ jobs:
     - name: Replace Keywords
       run: | # The target script file you want the run in the root repository, and the file (in my case 'readme.md') you want to keep updating
         python script.py 
-        git add readme.md
+        git add README.md
         git commit -m "update"
         git push
