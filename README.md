@@ -11,3 +11,5 @@
 3rd: Copy the .yaml file from this repository and paste it into your own .yaml file. Change the username, email, or script target file based on your needs.
 
 ![image](https://github.com/user-attachments/assets/b4ecd954-c519-4ce2-9e88-3eb9a1bc9926)
+
+4th: add the python script in your repo. The script is just replacing the words in README.md
