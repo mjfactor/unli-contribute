@@ -1,0 +1,27 @@
+name: Running Script
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+jobs:
+  push_changes:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      
+    - name: Set Git Config
+      run: |
+        git config --global user.email "emjayfactor@gmail.com" # the email that your github uses
+        git config --global user.name "mjfactor" # your github username
+
+    
+    - name: Replace Keywords
+      run: |
+        python script.py # The script you want the run in the root 
+        git add readme.md
+        git commit -m "update"
+        git push
