@@ -15,13 +15,13 @@ jobs:
       
     - name: Set Git Config
       run: |
-        git config --global user.email "emjayfactor@gmail.com" 
-        git config --global user.name "mjfactor" 
+        git config --global user.email "emjayfactor@gmail.com" #your email in github
+        git config --global user.name "mjfactor" #your username
 
     
     - name: Replace Keywords
       run: |
-        python script.py # The script you want the run in the root 
+        python script.py #The target script file you want the run in the root repository 
         git add readme.md
         git commit -m "update"
         git push
