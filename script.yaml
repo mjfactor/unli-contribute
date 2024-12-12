@@ -11,17 +11,17 @@ jobs:
     
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v2 
       
     - name: Set Git Config
-      run: |
-        git config --global user.email "emjayfactor@gmail.com" #your email in github
-        git config --global user.name "mjfactor" #your username
-
+      run: | # username and email of your github
+        git config --global user.email "emjayfactor@gmail.com" 
+        git config --global user.name "mjfactor" 
+    
     
     - name: Replace Keywords
-      run: |
-        python script.py #The target script file you want the run in the root repository 
+      run: | # The target script file you want the run in the root repository, and the file (in my case 'readme.md') you want to keep updating
+        python script.py 
         git add readme.md
         git commit -m "update"
         git push
