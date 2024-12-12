@@ -15,8 +15,8 @@ jobs:
       
     - name: Set Git Config
       run: |
-        git config --global user.email "emjayfactor@gmail.com" # the email that your github uses
-        git config --global user.name "mjfactor" # your github username
+        git config --global user.email "emjayfactor@gmail.com" 
+        git config --global user.name "mjfactor" 
 
     
     - name: Replace Keywords
